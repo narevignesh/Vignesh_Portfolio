@@ -11,20 +11,19 @@ Designed with a dark developer aesthetic inspired by modern AI product interface
 This portfolio is built as a pure, lightweight, modern client-side web application with zero backend dependencies, making it deployable on **GitHub Pages** with no build steps required.
 
 ### Quick GitHub Pages Deployment:
-1. **Create a new repository** on GitHub (e.g. `narevignesh.github.io` or `portfolio`).
-2. Push this repository to GitHub:
+1. Push this repository to GitHub:
    ```bash
-   git remote add origin https://github.com/narevignesh/<YOUR-REPO-NAME>.git
+   git remote add origin https://github.com/narevignesh/Vignesh_Portfolio.git
    git branch -M main
    git push -u origin main
    ```
-3. In your GitHub repository:
-   - Go to **Settings** > **Pages** (under Code and automation).
-   - Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
+2. In your GitHub repository:
+   - Go to [**Settings > Pages**](https://github.com/narevignesh/Vignesh_Portfolio/settings/pages) (under Code and automation in the left sidebar).
+   - Under **Build and deployment** > **Source**, select **Deploy from a branch**.
    - Under **Branch**, select `main` and folder `/ (root)`.
    - Click **Save**.
-4. Your website will be live in ~60 seconds at:
-   `https://narevignesh.github.io/<YOUR-REPO-NAME>/` (or `https://narevignesh.github.io/` if using user pages).
+3. Your website will be live in ~60 seconds at:
+   **[https://narevignesh.github.io/Vignesh_Portfolio/](https://narevignesh.github.io/Vignesh_Portfolio/)**
 
 ---
 
