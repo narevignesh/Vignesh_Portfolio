@@ -9,7 +9,42 @@ document.addEventListener('DOMContentLoaded', () => {
   initCertificateModal();
   initContactForm();
   initCardTilt();
+  initCodeEditor();
 });
+
+/* ==========================================================================
+   0. CODE EDITOR RENDERING (FORMAT-IMMUNE & RESPONSIVE)
+   ========================================================================== */
+function initCodeEditor() {
+  const editorBody = document.querySelector('.editor-body');
+  if (!editorBody) return;
+
+  const codeLines = [
+    '<span class="token-keyword">const</span> <span class="token-variable">developer</span> = {',
+    '  <span class="token-property">name</span>: <span class="token-string">"Nare Vignesh"</span>,',
+    '  <span class="token-property">role</span>: <span class="token-string">"AI Engineer"</span>,',
+    '  <span class="token-property">secondaryRole</span>: <span class="token-string">"Full Stack Developer"</span>,',
+    '  <span class="token-property">focus</span>: [',
+    '    <span class="token-string">"Generative AI"</span>, <span class="token-string">"RAG Systems"</span>,',
+    '    <span class="token-string">"AI Agents"</span>, <span class="token-string">"Machine Learning"</span>,',
+    '    <span class="token-string">"Full Stack Development"</span>',
+    '  ],',
+    '  <span class="token-property">stack</span>: [',
+    '    <span class="token-string">"Python"</span>, <span class="token-string">"LangChain"</span>, <span class="token-string">"LangGraph"</span>,',
+    '    <span class="token-string">"FastAPI"</span>, <span class="token-string">"Django"</span>, <span class="token-string">"React"</span>,',
+    '    <span class="token-string">"MySQL"</span>, <span class="token-string">"MongoDB"</span>',
+    '  ],',
+    '  <span class="token-property">goal</span>: <span class="token-string">"Building intelligent and scalable real-world applications."</span>',
+    '};'
+  ];
+
+  editorBody.innerHTML = codeLines.map((content, index) => {
+    const lineNum = String(index + 1).padStart(2, '0');
+    const isLast = index === codeLines.length - 1;
+    const cursor = isLast ? '<span class="cursor-blink"></span>' : '';
+    return `<div class="code-line"><span class="line-number">${lineNum}</span>${content}${cursor}</div>`;
+  }).join('');
+}
 
 /* ==========================================================================
    1. NEURAL PARTICLE CANVAS

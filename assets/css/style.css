@@ -638,7 +638,15 @@ img {
   color: var(--text-secondary);
   font-size: 1.125rem;
   line-height: 1.7;
-  max-width: 580px;
+  max-width: 600px;
+}
+
+.hero-description-sub {
+  display: block;
+  margin-top: 10px;
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 /* Hero CTAs */
@@ -936,7 +944,7 @@ img {
   display: flex;
   align-items: baseline;
   white-space: pre;
-  min-width: fit-content;
+  min-width: max-content;
 }
 
 .line-number {
@@ -2166,45 +2174,86 @@ img {
   }
 }
 
+@media (max-width: 580px) {
+  .hero-profile-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .profile-badge-pill {
+    align-self: flex-start;
+  }
+
+  .profile-avatar-wrap {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 @media (max-width: 480px) {
   .hero-greeting {
     font-size: 2rem;
   }
+
   .hero-role-primary {
     font-size: 1.75rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
   }
+
   .hero-role-secondary {
     font-size: 1.15rem;
   }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-description-sub {
+    font-size: 0.925rem;
+  }
+
   .hero-cta-group {
     flex-direction: column;
     width: 100%;
   }
+
   .btn-primary, .btn-secondary {
     width: 100%;
     justify-content: center;
   }
+
   .editor-body {
-    padding: 12px 8px;
+    padding: 12px 10px;
     font-size: 0.72rem;
     line-height: 1.5;
   }
+
+  .code-line {
+    white-space: pre;
+    min-width: max-content;
+  }
+
   .line-number {
     width: 16px;
     margin-right: 8px;
     font-size: 0.65rem;
   }
+
   .editor-tab {
     padding: 2px 8px;
     font-size: 0.75rem;
   }
+
   .editor-badge {
     font-size: 0.65rem;
     padding: 2px 6px;
   }
+
   .cert-meta-grid {
     grid-template-columns: 1fr;
   }
