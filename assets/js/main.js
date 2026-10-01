@@ -26,15 +26,13 @@ function initCodeEditor() {
     '  <span class="token-property">secondaryRole</span>: <span class="token-string">"Full Stack Developer"</span>,',
     '  <span class="token-property">focus</span>: [',
     '    <span class="token-string">"Generative AI"</span>, <span class="token-string">"RAG Systems"</span>,',
-    '    <span class="token-string">"AI Agents"</span>, <span class="token-string">"Machine Learning"</span>,',
-    '    <span class="token-string">"Full Stack Development"</span>',
+    '    <span class="token-string">"AI Agents"</span>, <span class="token-string">"Machine Learning"</span>',
     '  ],',
     '  <span class="token-property">stack</span>: [',
-    '    <span class="token-string">"Python"</span>, <span class="token-string">"LangChain"</span>, <span class="token-string">"LangGraph"</span>,',
-    '    <span class="token-string">"FastAPI"</span>, <span class="token-string">"Django"</span>, <span class="token-string">"React"</span>,',
-    '    <span class="token-string">"MySQL"</span>, <span class="token-string">"MongoDB"</span>',
+    '    <span class="token-string">"Python"</span>, <span class="token-string">"LangChain"</span>, <span class="token-string">"FastAPI"</span>,',
+    '    <span class="token-string">"React"</span>, <span class="token-string">"Django"</span>, <span class="token-string">"MongoDB"</span>',
     '  ],',
-    '  <span class="token-property">goal</span>: <span class="token-string">"Building intelligent and scalable real-world applications."</span>',
+    '  <span class="token-property">goal</span>: <span class="token-string">"Building intelligent scalable AI."</span>',
     '};'
   ];
 
